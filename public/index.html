@@ -8,12 +8,218 @@
     <meta name="description" content="Web site created using create-react-app"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Ecommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="./imagenes/favicon.png"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Tipografia -->
+    <script src="https://kit.fontawesome.com/b96c8aefd4.js"
+    crossorigin="anonymous"></script>
+    <title>La Rosa - Tienda</title>
   </head>
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <body class="body">
+    <header>  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">
+          <img class="logoPag" src="/imagenes/logo.png" alt="Logo">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end;">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./precios.html">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tienda</a>
+            <span class="sr-only"></span>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </header>
+
+    <!-- TIENDA -->
+    <h2 class="storeTitle">Tienda de suplementos y accesorios</h2>
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4 bg-danger">
+                            <h3 class="item-title">Truemade Whey Protein</h3>
+                            <img class="item-image" src="./imagenes/ena_whey_protein_true_made.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 5199</h4>
+                                <button class="item-button btn btn-light addToCart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4 bg-danger">
+                            <h3 class="item-title">Star Nutrition Creatina</h3>
+                            <img class="item-image" src="./imagenes/D_NQ_NP_705680-MLA48462687556_122021-V.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 9599</h4>
+                                <button class="item-button btn btn-light addToCart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4 bg-danger">
+                            <h3 class="item-title">Optimun Nutrition Pre-Workout</h3>
+                            <img class="item-image" src="./imagenes/1640689707-510Zd7ktidS._SL500_.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 4899</h4>
+                                <button class="item-button btn btn-light addToCart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4 bg-danger">
+                            <h3 class="item-title">MIR Tiraband (Media tension)</h3>
+                            <img class="item-image" src="./imagenes/3310_800.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 1200</h4>
+                                <button class="item-button btn btn-light addToCart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4 bg-danger" >
+                            <h3 class="item-title">BalboaFit Strap reforzados</h3>
+                            <img class="item-image" src="./imagenes/29301_800.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 2550</h4>
+                                <button class="item-button btn btn-light addToCart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4 bg-danger">
+                            <h3 class="item-title">BalboaFit Cinturon de fuerza lumbar</h3>
+                            <img class="item-image" src="./imagenes/2918_800.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$ 8999</h4>
+                                <button class="item-button btn btn-light addToCart">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRITO -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h2 class="text-center">Carrito</h2>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-cart-items shoppingCartItemsContainer"></div>
+
+            <!-- PRECIO TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">$ 0</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<footer class="footer">
+    <h2 class="textoFooter">¡Ponete en contacto con nosotros!</h2>
+      <ul class="ulFooter">
+      <li>
+        <a href="https://www.facebook.com/gimnasio.larosa" target="_blank">
+         <i class="fa-brands fa-facebook fa-2x1"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/gimnasiolarosa" target="_blank">
+         <i class="fa-brands fa-instagram fa-2x1"></i>
+        </a>
+      </li>
+        <a href="https://www.whatsapp.com/lapagina" target="_blank">
+         <i class="fa-brands fa-whatsapp fa-2x1"></i>
+        </a>
+    </ul>
+</footer>
+
+
+
+
 
 
 
